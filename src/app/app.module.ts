@@ -11,6 +11,9 @@ import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component'
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PagesComponent } from './pages/pages.component';
+
 
 @NgModule({
   declarations: [
@@ -23,10 +26,13 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
     NopagefoundComponent,
     BreadcrumbsComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    PagesComponent,
+   
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
